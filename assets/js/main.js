@@ -67,14 +67,15 @@
 // 	parent.appendChild(li);
 // }
 //6
-//исп mogveover, тем самым каждый раз когда курсор на нашей ссылке то выполняется условие 
-// var elems = document.getElementsByTagName('a');
-// for (var i = 0; i < elems.length; i++) {
-// 	elems[i].addEventListener('mogveover', func);
-// }
-// function func() {
-// 	this.innerHTML = this.innerHTML + ' (' + this.href + ')';
-// }
+//исп mogveover, тем самым каждый раз когда курсор на нашей ссылке то выполняется условие
+var elems = document.getElementsByTagName('a');
+for (var i = 0; i < elems.length; i++) {
+ elems[i].addEventListener('mouseover', func);
+}
+
+function func() {
+ this.innerHTML = this.innerHTML + ' (' + this.href + ')';
+}
 //7 
 //при клике на текст наше число возводится в квадрат
 // document.querySelectorAll('p').forEach(p => {
